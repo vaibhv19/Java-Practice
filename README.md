@@ -1,179 +1,95 @@
-# Java - Learning Repository
+# Comprehensive Java Code Collection & Learning Repository
 
-A comprehensive Java learning project covering fundamental concepts in backend development, organized into key topic areas with practical examples.
+Welcome to the **Java Code Collection**. This repository is a code-first, practical reference for learning, revising, and mastering Core and Advanced Java.
 
-## 📚 Project Structure
-
-```
-Basics/
-├── src/com/javabasics/
-│   ├── collectionframework/    # Java Collections API examples
-│   ├── Datatypes/              # Primitive and wrapper data types
-│   ├── multithreading/         # Threading and concurrent programming
-│   └── oops/                   # Object-Oriented Programming principles
-└── README.md
-```
-
-## 🎯 Topics Covered
-
-### 1. **Collection Framework** (`collectionframework/`)
-Exploring Java's Collections API with practical examples:
-- **ArrayList** - Dynamic array implementation allowing duplicates
-- **LinkedList** - Doubly-linked list implementation
-- List operations and performance characteristics
-- Comparing different collection implementations
-
-**Key Files:**
-- `CF.java` - ArrayList and LinkedList basics
-- `CF2.java` - Additional collection operations
-- `CF3.java` - Advanced collection concepts
-
-### 2. **Data Types** (`Datatypes/`)
-Understanding Java's type system:
-- Primitive data types (int, float, double, boolean, etc.)
-- Wrapper classes
-- Type conversions and casting
-
-**Key Files:**
-- `test.java` - Data type examples and operations
-
-### 3. **Multithreading** (`multithreading/`)
-Concurrent programming and threading concepts:
-- **Thread Creation** - Extending Thread class vs Implementing Runnable
-- **Thread Synchronization** - Using join() for thread coordination
-- **Performance Comparison** - Sequential vs concurrent execution
-- Real-world examples with Number Counting and Sum Calculation
-
-**Key Files:**
-- `withmultithreading.java` - Multithreading implementation with timing
-- `WithoutMultiThreading.java` - Sequential execution baseline
-- `NumberCounter.java` - Thread extending implementation
-- `SumCalculator.java` - Runnable interface implementation
-
-### 4. **Object-Oriented Programming** (`oops/`)
-Core OOP principles in Java:
-- **Polymorphism** - Method overloading with different parameters and types
-- **Encapsulation** - Data hiding and abstraction
-- **Inheritance** - Class hierarchies and code reuse
-- **Real-world Examples** - Car, Smartphone, and Zoo simulations
-
-**Key Files:**
-- `main.java` - Polymorphism examples (method overloading)
-- `main2.java` - Additional OOP concepts
-- `car.java` - Vehicle class example
-- `smartphone.java` - Electronics class example
-- `zoo.java` - Animal hierarchy example
-- `test.java` - OOP testing and validation
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Java Development Kit (JDK) 8 or higher
-- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, etc.) or command line
-
-### Compilation
-```bash
-javac src/com/javabasics/**/*.java
-```
-
-### Running Examples
-Each file contains a `main()` method and can be run directly:
-
-```bash
-# Collection Framework
-java -cp src com.javabasics.collectionframework.CF
-
-# OOP Concepts
-java -cp src com.javabasics.oops.main
-
-# Multithreading
-java -cp src com.javabasics.multithreading.withmultithreading
-```
-
-## 📖 Learning Path
-
-1. **Start with Data Types** - Understand Java's type system
-2. **Learn OOP Fundamentals** - Master classes, methods, and polymorphism
-3. **Explore Collections** - Work with built-in data structures
-4. **Study Multithreading** - Understand concurrent programming
-5. **Compare Approaches** - See performance differences (with vs without multithreading)
-
-## 🔑 Key Concepts
-
-### Collections
-- Understand the difference between ArrayList (array-backed) and LinkedList (node-based)
-- Performance implications for different operations
-- When to use each collection type
-
-### Multithreading
-- Two ways to create threads: extend Thread class or implement Runnable
-- Thread lifecycle and synchronization
-- Measuring performance improvements with concurrent execution
-- Using `join()` to wait for thread completion
-
-### OOP Principles
-- **Method Overloading** - Same method name, different parameters
-- **Polymorphism** - Different forms of objects behaving differently
-- **Encapsulation** - Bundling data and methods
-- **Real-world Modeling** - Objects representing real entities
-
-## 💡 Best Practices Demonstrated
-
-- ✅ Proper package organization (`com.javabasics.*`)
-- ✅ Clear method naming and structure
-- ✅ Exception handling in multithreaded code
-- ✅ Performance measurement and comparison
-- ✅ Multiple implementation approaches (inheritance vs composition)
-
-## 🎓 Exercises & Extensions
-
-Try these to deepen your understanding:
-
-1. **Collections**
-   - Implement a Set-based example
-   - Compare performance between ArrayList and LinkedList
-
-2. **Multithreading**
-   - Add thread-safe counters using synchronization
-   - Implement producer-consumer pattern
-   - Use thread pools (ExecutorService)
-
-3. **OOP**
-   - Add abstract base classes
-   - Implement interfaces for different types
-   - Create a more complex inheritance hierarchy
-
-4. **Data Types**
-   - Explore Generics with collections
-   - Test null and type safety
-
-## 📝 Notes
-
-- Each class includes comments explaining the concepts
-- Compare sequential vs concurrent execution in multithreading module
-- The project structure follows Java naming conventions (package structure = folder structure)
-
-## 🛠️ IDE Setup
-
-### IntelliJ IDEA
-1. Open project → Select root folder
-2. Project Structure → Mark `src` as Sources Root
-3. Run any file with right-click → Run
-
-### VS Code
-1. Install "Extension Pack for Java" by Microsoft
-2. Open workspace folder
-3. Run with CodeLens or Ctrl+F5
-
-### Eclipse
-1. File → New → Java Project
-2. Link to existing source in `src` directory
-3. Build Path → Add source folder
-
-## 📄 License
-
-Educational purposes - Learning repository
+> [!NOTE]
+> **Code-First Repository**: Actual runnable `.java` source code files are the primary content of this repository. Markdown files serve strictly as supporting documentation.
 
 ---
 
-**Happy Learning!** 🎉
+## 🏗️ Repository Architecture
+
+The codebase is organized into **ONLY THREE** major categories:
+
+```
+src/com/
+│
+├── 1. JavaFundamentals/
+│   ├── Basics/                   (JDK, JRE, JVM, javac, main method, identifiers, comments)
+│   ├── VariablesAndDataTypes/    (Primitives, literals, widening/narrowing casting, final, scope)
+│   ├── Operators/                (Arithmetic, relational, logical, assignment, bitwise, precedence)
+│   ├── ControlFlow/              (if-else, switch expressions, loops, break/continue)
+│   ├── Methods/                  (Parameters, call-by-value, static vs instance, overloading)
+│   ├── Recursion/                (Base case, recursive step, call stack, factorial, fibonacci)
+│   ├── Arrays/                   (1D, 2D matrices, jagged arrays, java.util.Arrays utility)
+│   ├── Strings/                  (String Constant Pool, immutability, StringBuilder, StringBuffer)
+│   └── InputOutput/              (System.out formatting, Scanner parsing & newline fix)
+│
+├── 2. OOP/
+│   ├── ClassesAndObjects/        (Class blueprint, fields, methods, object instantiation)
+│   ├── Constructors/             (No-arg, parameterized, overloading, constructor chaining)
+│   ├── Keywords/                 (this, super, final keyword applications)
+│   ├── AccessModifiers/          (private, default, protected, public visibility matrix)
+│   ├── Encapsulation/            (Data hiding, getters/setters, invariant validation)
+│   ├── Inheritance/              (Single, multilevel, hierarchical inheritance)
+│   ├── Polymorphism/             (Static overloading vs Dynamic method dispatch)
+│   ├── Abstraction/              (Abstract classes and abstract methods)
+│   ├── Interfaces/               (Interfaces, default methods, static interface methods)
+│   ├── AdvancedOOP/              (Composition vs Inheritance, immutability pattern, inner classes)
+│   └── Projects/                 (Educational mini-projects: ATM, Library, Parking Lot)
+│
+└── 3. AdvancedJava/
+    ├── WrapperClasses/           (Autoboxing, unboxing, caching pool, parsing methods)
+    ├── ExceptionHandling/        (Throwable, checked/unchecked, custom exceptions, try-with-resources)
+    ├── FileHandling/             (FileReader, FileWriter, BufferedReader, BufferedWriter)
+    ├── Collections/              (List, Set, Map, Queue, Deque, Iterator & ListIterator)
+    ├── Generics/                 (Generic classes/methods, wildcards, PECS principle)
+    ├── ObjectComparison/         (equals & hashCode contract, Comparable vs Comparator)
+    ├── Enums/                    (Type-safe enums, fields, constructors, methods, switch)
+    ├── FunctionalProgramming/    (Lambdas, Predicate/Consumer/Supplier/Function, Streams, Optional)
+    ├── Multithreading/           (Threads, Locks, Synchronization, Executors, CompletableFuture, Concurrent Collections)
+    ├── MemoryAndJVM/             (JVM Architecture, Metaspace, Generational GC, String interning)
+    └── JavaForDSA/               (Data structures toolkit, Binary Search, Bit manipulation, Complexity cheat sheet)
+```
+
+---
+
+## 📈 Learning Progression
+
+```
+Java Fundamentals ───► Object-Oriented Programming (OOP) ───► Advanced Java ───► Java for DSA
+```
+
+1. **Java Fundamentals**: Syntax, control flow, methods, arrays, strings, and basic I/O.
+2. **OOP**: Designing robust object-oriented software with encapsulation, inheritance, polymorphism, abstraction, and modular design patterns.
+3. **Advanced Java**: Exception handling, I/O streams, Java Collections Framework, Generics, Concurrency, Functional Programming, and JVM internals.
+4. **Java for DSA**: Language patterns, algorithm templates, and performance cheat sheets for problem solving.
+
+---
+
+## 📦 Package Naming Conventions
+All Java source files follow package names aligned with the three-folder hierarchy:
+- `package com.JavaFundamentals.<Subfolder>;`
+- `package com.OOP.<Subfolder>;`
+- `package com.AdvancedJava.<Subfolder>;`
+
+---
+
+## 🛠️ Compilation and Execution
+
+To compile the entire codebase into the `out` directory:
+
+```powershell
+$files = Get-ChildItem -Path "src\com" -Recurse -Filter "*.java" | Select-Object -ExpandProperty FullName
+javac -d out $files
+```
+
+To run representative example classes:
+
+```powershell
+java -cp out com.JavaFundamentals.Basics.HelloWorld
+java -cp out com.OOP.Projects.ATM.ATMProjectDemo
+java -cp out com.AdvancedJava.FunctionalProgramming.StreamsAndOptionalDemo
+java -cp out com.AdvancedJava.Multithreading.ExecutorsAndConcurrencyToolkit
+java -cp out com.AdvancedJava.JavaForDSA.DSADataStructuresToolkit
+```
